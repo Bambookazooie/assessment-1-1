@@ -20,7 +20,7 @@
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"A method is a chunk of code relating to an object. A function is a reusable and stable chunk of code."
 
 /**
  * QUESTION #2 -
@@ -34,7 +34,7 @@ for (let i = 0; i = timesToLoop; i++) {
     console.log('I am looping!');
 }
 
-""
+"The condition statement, i cannot equal the variable and effectively run a loop. i has to be < than the variable."
 
 /**
  * QUESTION #3 -
@@ -44,7 +44,7 @@ for (let i = 0; i = timesToLoop; i++) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"if statements."
 
 /**
  * QUESTION #4 -
@@ -53,7 +53,7 @@ for (let i = 0; i = timesToLoop; i++) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"To execute a chunk of code. To have a reusable chunk of code you can run again and again. To make code more clean and easy to read."
 
 /**
  * QUESTION #5 -
@@ -67,7 +67,7 @@ for (let i = 0; i = timesToLoop; i++) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"C and D"
 
 /**
  * QUESTION #6 -
@@ -76,7 +76,7 @@ for (let i = 0; i = timesToLoop; i++) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"Document Object Model"
 
 /**
  * QUESTION #7 -
@@ -95,7 +95,7 @@ function testQuestionSeven() {
     }
 }
 
-""
+"No! Assessments are fun, right?! does not equal true."
 
 /**
  * QUESTION #8 -
@@ -105,7 +105,7 @@ function testQuestionSeven() {
  * Hint: Think of their general TYPE....
  */
 
-""
+"They're all numbers."
 
 /**
  * QUESTION #9 -
@@ -114,7 +114,7 @@ function testQuestionSeven() {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"The purpose of an IIFE is to be able to reuse a variable inside of a function outside of that function anywhere in your JS file. They make local variables global."
 
 /**
  * QUESTION #10 -
@@ -135,7 +135,7 @@ switch (value) {
         console.log('We are out of food...');
 };
 
-""
+"The answer is cupcakes! The answer is pancakes! The answer is french fries! We are out of food... All 4, because there is no [break] under any of the console.log statements."
 
 /**
  * QUESTION #11 -
@@ -144,9 +144,23 @@ switch (value) {
  * Answer Type: Function
  */
 
-function createGrid(width, height) {
+//example gridContainer
+let gridContainer = document.querySelector('.grid-container');
 
-}
+function createGrid(width, height) {
+    for (let i = 0; i <= width; i++) {
+        let row = document.createElement('div');
+        row.classList.add('row');
+        gridContainer.appendChild(row);
+            for (let j = 0; j <= height; j++) {
+                let square = document.createElement('div');
+                square.classList.add('square');
+                row.appendChild(square);
+        };
+    };
+};
+
+createGrid(10, 10);
 
 /**
  * QUESTION #12 -
@@ -155,7 +169,7 @@ function createGrid(width, height) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"A global variable is declared outside of a function. A local variable is declared inside of a function."
 
 /**
  * QUESTION #13 - (EXTRA CREDIT!)
@@ -169,4 +183,4 @@ function createGrid(width, height) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-""
+"A"
