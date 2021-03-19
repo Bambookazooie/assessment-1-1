@@ -44,7 +44,7 @@ for (let i = 0; i = timesToLoop; i++) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-"if statements."
+"Ternary operator."
 
 /**
  * QUESTION #4 -
@@ -67,7 +67,7 @@ for (let i = 0; i = timesToLoop; i++) {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-"C and D"
+"C"
 
 /**
  * QUESTION #6 -
@@ -95,7 +95,7 @@ function testQuestionSeven() {
     }
 }
 
-"No! Assessments are fun, right?! does not equal true."
+"Nothing, because the function was not called. Had the function been called the output would have been 'No!' because Assessments are fun, right?! does not equal true."
 
 /**
  * QUESTION #8 -
@@ -114,7 +114,7 @@ function testQuestionSeven() {
  * Answer Type: String (Add Answer Between Quotes)
  */
 
-"The purpose of an IIFE is to be able to reuse a variable inside of a function outside of that function anywhere in your JS file. They make local variables global."
+"IIFEs are a way for developers to control their own scope. An IIFE is used when you want to close the global namespace to just that file."
 
 /**
  * QUESTION #10 -
@@ -135,7 +135,7 @@ switch (value) {
         console.log('We are out of food...');
 };
 
-"The answer is cupcakes! The answer is pancakes! The answer is french fries! We are out of food... All 4, because there is no [break] under any of the console.log statements."
+"'We are out of food...' because none of the cases are true, so it then goes to default."
 
 /**
  * QUESTION #11 -
@@ -144,21 +144,21 @@ switch (value) {
  * Answer Type: Function
  */
 
-//example gridContainer
+//example grid container
 let gridContainer = document.querySelector('.grid-container');
 
 function createGrid(width, height) {
-    for (let i = 0; i <= width; i++) {
+    for (let i = 0; i <= height; i++) {
         let row = document.createElement('div');
         row.classList.add('row');
         gridContainer.appendChild(row);
-            for (let j = 0; j <= height; j++) {
-                let square = document.createElement('div');
-                square.classList.add('square');
-                row.appendChild(square);
-        };
-    };
-};
+        for (let j = 0; j <= width; j++) {
+            let square = document.createElement('div');
+            square.classList.add('square');
+            row.appendChild(square);
+        }
+    }
+}
 
 createGrid(10, 10);
 
